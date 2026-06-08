@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Madhumitha N | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            card: '#1e293b',
+                            accent: '#38bdf8',
+                            textMuted: '#94a3b8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .active-nav {
+            color: #38bdf8;
+            border-bottom: 2px solid #38bdf8;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 w-full bg-brand-dark/80 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#Home" class="text-xl font-bold tracking-wider text-brand-accent">SM<span class="text-slate-100">.N</span></a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#Home" class="hover:text-brand-accent transition">Home</a>
+                <a href="#About" class="hover:text-brand-accent transition">About</a>
+                <a href="#Education" class="hover:text-brand-accent transition">Education</a>
+                <a href="#Skills" class="hover:text-brand-accent transition">Skills</a>
+                <a href="#Experience" class="hover:text-brand-accent transition">Experience</a>
+                <a href="#Projects" class="hover:text-brand-accent transition">Projects</a>
+                <a href="#Certifications" class="hover:text-brand-accent transition">Certifications</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-slate-100 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-card border-b border-slate-800 px-4 py-4 space-y-3 flex flex-col">
+            <a href="#Home" class="hover:text-brand-accent transition py-1">Home</a>
+            <a href="#About" class="hover:text-brand-accent transition py-1">About</a>
+            <a href="#Education" class="hover:text-brand-accent transition py-1">Education</a>
+            <a href="#Skills" class="hover:text-brand-accent transition py-1">Skills</a>
+            <a href="#Experience" class="hover:text-brand-accent transition py-1">Experience</a>
+            <a href="#Projects" class="hover:text-brand-accent transition py-1">Projects</a>
+            <a href="#Certifications" class="hover:text-brand-accent transition py-1">Certifications</a>
+        </div>
+    </header>
+
+    <!-- Hero / Home Section -->
+    <section id="Home" class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-16">
+        <p class="text-brand-accent font-mono tracking-widest mb-3 text-sm md:text-base animate-pulse">Hi, my name is</p>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-100 tracking-tight mb-4">Shree Madhumitha N</h1>
+        <h2 class="text-xl md:text-3xl text-brand-textMuted font-semibold mb-6 max-w-2xl">Aspiring Electronics & Communication Engineer</h2>
+        <p class="max-w-xl text-brand-textMuted text-sm md:text-base mb-8">
+            Passionate about electronics and coding, leveraging strong hardware description skills and machine learning architectures to solve complex technical problems.
+        </p>
+        <div class="flex space-x-6 mb-8 text-xl">
+            <a href="mailto:madhuvi555@gmail.com" class="hover:text-brand-accent transition" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" target="_blank" class="hover:text-brand-accent transition" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank" class="hover:text-brand-accent transition" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="#About" class="border border-brand-accent text-brand-accent hover:bg-brand-accent/10 px-6 py-3 rounded text-sm font-semibold tracking-wide transition">
+            Explore My Work
+        </a>
+    </section>
+
+    <!-- About / Objective Section -->
+    <section id="About" class="max-w-4xl mx-auto px-4 py-24">
+        <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center">
+            <span class="text-brand-accent font-mono text-xl mr-2">01.</span> Career Objective
+            <span class="h-[1px] bg-slate-800 flex-grow ml-4"></span>
+        </h3>
+        <div class="bg-brand-card p-6 md:p-8 rounded-lg border border-slate-800 shadow-xl">
+            <p class="text-brand-textMuted leading-relaxed text-base md:text-lg">
+                Aspiring electronics engineer with a strong passion for electronics and coding, eager to leverage my skills in a dynamic and collaborative team environment. Seeking an opportunity to apply my problem-solving and leadership skills in a progressive organization that fosters growth and learning.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 pt-6 border-t border-slate-800/60 text-sm">
+                <div>
+                    <span class="text-brand-accent font-mono"><i class="fa-solid fa-location-dot mr-2"></i> Location:</span> Chennai
+                </div>
+                <div>
+                    <span class="text-brand-accent font-mono"><i class="fa-solid fa-graduation-cap mr-2"></i> Current Focus:</span> Electronics & Software Systems
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="Education" class="max-w-4xl mx-auto px-4 py-24">
+        <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center">
+            <span class="text-brand-accent font-mono text-xl mr-2">02.</span> Education
+            <span class="h-[1px] bg-slate-800 flex-grow ml-4"></span>
+        </h3>
+        <div class="space-y-6">
+            <!-- College -->
+            <div class="bg-brand-card p-6 rounded-lg border border-slate-800 relative overflow-hidden group hover:border-brand-accent/50 transition">
+                <div class="absolute right-0 top-0 bg-brand-accent text-brand-dark px-3 py-1 font-mono text-xs font-bold rounded-bl">
+                    Expected 2027
+                </div>
+                <h4 class="text-xl font-bold text-slate-100 group-hover:text-brand-accent transition">R.M.K Engineering College</h4>
+                <p class="text-sm text-brand-textMuted mt-1">Electronics and Communication Engineering</p>
+                <div class="mt-4 inline-block bg-brand-dark px-3 py-1.5 rounded text-sm text-brand-accent font-mono border border-slate-800">
+                    CGPA: 8.96 <span class="text-xs text-brand-textMuted">(up to 5th semester)</span>
+                </div>
+            </div>
+            <!-- Class 12 -->
+            <div class="bg-brand-card p-6 rounded-lg border border-slate-800 relative overflow-hidden group hover:border-brand-accent/50 transition">
+                <div class="absolute right-0 top-0 bg-slate-800 text-brand-textMuted px-3 py-1 font-mono text-xs rounded-bl">
+                    2021
+                </div>
+                <h4 class="text-xl font-bold text-slate-100">Velammal Matric. Hr. Sec. School</h4>
+                <p class="text-sm text-brand-textMuted mt-1">MATRIC Class 12</p>
+                <div class="mt-4 inline-block bg-brand-dark px-3 py-1.5 rounded text-sm text-emerald-400 font-mono border border-slate-800">
+                    Percentage: 94.3%
+                </div>
+            </div>
+            <!-- Class 10 -->
+            <div class="bg-brand-card p-6 rounded-lg border border-slate-800 relative overflow-hidden group hover:border-brand-accent/50 transition">
+                <div class="absolute right-0 top-0 bg-slate-800 text-brand-textMuted px-3 py-1 font-mono text-xs rounded-bl">
+                    2019
+                </div>
+                <h4 class="text-xl font-bold text-slate-100">Velammal Matric. Hr. Sec. School</h4>
+                <p class="text-sm text-brand-textMuted mt-1">MATRIC Class 10</p>
+                <div class="mt-4 inline-block bg-brand-dark px-3 py-1.5 rounded text-sm text-emerald-400 font-mono border border-slate-800">
+                    Percentage: 94.2%
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="Skills" class="max-w-4xl mx-auto px-4 py-24">
+        <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center">
+            <span class="text-brand-accent font-mono text-xl mr-2">03.</span> Skills & Achievements
+            <span class="h-[1px] bg-slate-800 flex-grow ml-4"></span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Technical Skills -->
+            <div class="bg-brand-card p-6 rounded-lg border border-slate-800">
+                <h4 class="text-lg font-bold mb-4 text-brand-accent font-mono"><i class="fa-solid fa-code mr-2"></i> Technical Skills</h4>
+                <div class="flex flex-wrap gap-2.5 mb-6">
+                    <span class="bg-brand-dark px-3 py-1.5 text-sm font-medium rounded border border-slate-800 text-slate-200">C</span>
+                    <span class="bg-brand-dark px-3 py-1.5 text-sm font-medium rounded border border-slate-800 text-slate-200">Verilog</span>
+                    <span class="bg-brand-dark px-3 py-1.5 text-sm font-medium rounded border border-slate-800 text-slate-200">Java</span>
+                    <span class="bg-brand-dark px-3 py-1.5 text-sm font-medium rounded border border-slate-800 text-slate-200">ML</span>
+                </div>
+                <h4 class="text-sm font-bold mb-3 text-brand-textMuted font-mono uppercase tracking-wider">Coding Achievements</h4>
+                <ul class="text-sm text-brand-textMuted space-y-2">
+                    <li class="flex items-start"><i class="fa-solid fa-fire text-amber-500 mr-2 mt-1"></i> Solved 1060+ problems in Skillrack</li>
+                    <li class="flex items-start"><i class="fa-solid fa-code-branch text-brand-accent mr-2 mt-1"></i> Solved 1000+ problems in IamNeo</li>
+                </ul>
+            </div>
+            <!-- Soft Skills -->
+            <div class="bg-brand-card p-6 rounded-lg border border-slate-800 flex flex-col justify-between">
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-brand-accent font-mono"><i class="fa-solid fa-user-gear mr-2"></i> Soft Skills</h4>
+                    <div class="flex flex-wrap gap-2.5">
+                        <span class="bg-brand-dark px-3 py-1.5 text-sm font-medium rounded border border-slate-800 text-slate-300">Communication</span>
+                        <span class="bg-brand-dark px-3 py-1.5 text-sm font-medium rounded border border-slate-800 text-slate-300">Creative writing</span>
+                        <span class="bg-brand-dark px-3 py-1.5 text-sm font-medium rounded border border-slate-800 text-slate-300">Leadership</span>
+                        <span class="bg-brand-dark px-3 py-1.5 text-sm font-medium rounded border border-slate-800 text-slate-300">Problem Solving</span>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/60">
+                    <h4 class="text-sm font-bold mb-2 text-brand-textMuted font-mono uppercase tracking-wider">Leadership In Action</h4>
+                    <p class="text-sm text-brand-textMuted leading-relaxed">
+                        Organised and hosted a technical hackathon in an inter college event.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="Experience" class="max-w-4xl mx-auto px-4 py-24">
+        <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center">
+            <span class="text-brand-accent font-mono text-xl mr-2">04.</span> Experience
+            <span class="h-[1px] bg-slate-800 flex-grow ml-4"></span>
+        </h3>
+        
+        <div class="border-l-2 border-slate-800 ml-4 space-y-12 relative">
+            <!-- Experience 1 -->
+            <div class="relative pl-8 group">
+                <div class="absolute w-4 h-4 bg-brand-dark border-2 border-brand-accent rounded-full -left-[9px] top-1 group-hover:bg-brand-accent transition"></div>
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                    <h4 class="text-xl font-bold text-slate-100">VLSI Design Intern</h4>
+                    <span class="text-sm text-brand-accent font-mono font-medium bg-brand-accent/5 px-2.5 py-1 rounded border border-brand-accent/20 inline-block w-max mt-1 md:mt-0">Silicic Innova Technologies Pvt Ltd</span>
+                </div>
+                <p class="text-brand-textMuted text-sm md:text-base leading-relaxed">
+                    Learned and worked on FPGA-based system design using Verilog HDL.
+                </p>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="relative pl-8 group">
+                <div class="absolute w-4 h-4 bg-brand-dark border-2 border-slate-500 rounded-full -left-[9px] top-1 group-hover:border-brand-accent transition"></div>
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                    <h4 class="text-xl font-bold text-slate-100">Java Development Intern</h4>
+                    <span class="text-sm text-slate-400 font-mono font-medium bg-slate-800 px-2.5 py-1 rounded inline-block w-max mt-1 md:mt-0">InternPe</span>
+                </div>
+                <p class="text-brand-textMuted text-sm md:text-base leading-relaxed">
+                    Executed Java code to complete assigned tasks and support project objectives.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="Projects" class="max-w-4xl mx-auto px-4 py-24">
+        <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center">
+            <span class="text-brand-accent font-mono text-xl mr-2">05.</span> Projects
+            <span class="h-[1px] bg-slate-800 flex-grow ml-4"></span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Project 1 -->
+            <div class="bg-brand-card border border-slate-800 p-6 rounded-lg flex flex-col justify-between hover:-translate-y-1 transition duration-300 group">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fa-solid fa-truck-medical text-3xl text-brand-accent"></i>
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-sky-500/10 text-brand-accent border border-sky-500/20">IoT</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2 group-hover:text-brand-accent transition">IoT-Based Smart Ambulance System with Route Safety Analysis</h4>
+                    <p class="text-sm text-brand-textMuted leading-relaxed">
+                        Worked on developing a smart ambulance system that analyzes patient condition and suggests optimal hospital selection and safe routing.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-slate-800/60 font-mono text-xs text-brand-accent">
+                    <span>#IoT</span> <span>#SmartRouting</span> <span>#Sensors</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-brand-card border border-slate-800 p-6 rounded-lg flex flex-col justify-between hover:-translate-y-1 transition duration-300 group">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fa-solid fa-brain text-3xl text-brand-accent"></i>
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-sky-500/10 text-brand-accent border border-sky-500/20">Machine Learning</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2 group-hover:text-brand-accent transition">TPU NeuroArmour – ML-Based Muscle Pain Detection System</h4>
+                    <p class="text-sm text-brand-textMuted leading-relaxed">
+                        Built a machine learning model to detect muscle pain and spasms by analysing multi-sensor data from pressure, and MPU6050 motion sensors.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-slate-800/60 font-mono text-xs text-brand-accent">
+                    <span>#ML</span> <span>#MPU6050</span> <span>#SensorFusion</span>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-brand-card border border-slate-800 p-6 rounded-lg flex flex-col justify-between hover:-translate-y-1 transition duration-300 group md:col-span-2">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fa-solid fa-bolt text-3xl text-amber-400"></i>
+                        <span class="text-xs font-mono px-2 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">Ongoing</span>
+                    </div>
+                    <h4 class="text-lg font-bold mb-2 group-hover:text-brand-accent transition">Fault Diagnosis Method Using Acoustic Signal for Short Circuit</h4>
+                    <p class="text-sm text-brand-textMuted leading-relaxed">
+                        Working on developing an ML model to detect short circuits in induction motors using advanced signal profiling techniques.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-slate-800/60 font-mono text-xs text-amber-400">
+                    <span>#AcousticSignals</span> <span>#FaultDiagnosis</span> <span>#InductionMotors</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="Certifications" class="max-w-4xl mx-auto px-4 py-24 mb-16">
+        <h3 class="text-2xl md:text-3xl font-bold mb-8 flex items-center">
+            <span class="text-brand-accent font-mono text-xl mr-2">06.</span> Certifications
+            <span class="h-[1px] bg-slate-800 flex-grow ml-4"></span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Cert 1 -->
+            <div class="p-4 bg-brand-card border border-slate-800 rounded flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-mono text-brand-accent uppercase tracking-wider block mb-1">NPTEL (Elite)</span>
+                    <h5 class="font-bold text-slate-100 text-sm">VLSI Design Flow: RTL to GDS</h5>
+                </div>
+                <span class="text-xs font-mono text-brand-textMuted mt-4 block text-right">2025</span>
+            </div>
+            <!-- Cert 2 -->
+            <div class="p-4 bg-brand-card border border-slate-800 rounded flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-mono text-brand-accent uppercase tracking-wider block mb-1">NPTEL</span>
+                    <h5 class="font-bold text-slate-100 text-sm">CMOS Digital VLSI Design</h5>
+                </div>
+                <span class="text-xs font-mono text-brand-textMuted mt-4 block text-right">2024 – 2025</span>
+            </div>
+            <!-- Cert 3 -->
+            <div class="p-4 bg-brand-card border border-slate-800 rounded flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-mono text-brand-accent uppercase tracking-wider block mb-1">NPTEL</span>
+                    <h5 class="font-bold text-slate-100 text-sm">Introduction to Machine Learning</h5>
+                </div>
+                <span class="text-xs font-mono text-brand-textMuted mt-4 block text-right">2026</span>
+            </div>
+            <!-- Cert 4 -->
+            <div class="p-4 bg-brand-card border border-slate-800 rounded flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-mono text-brand-accent uppercase tracking-wider block mb-1">IamNeo</span>
+                    <h5 class="font-bold text-slate-100 text-sm">Advanced Java Programming</h5>
+                </div>
+                <span class="text-xs font-mono text-brand-textMuted mt-4 block text-right">2024 – 2025</span>
+            </div>
+            <!-- Cert 5 -->
+            <div class="p-4 bg-brand-card border border-slate-800 rounded flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-mono text-brand-accent uppercase tracking-wider block mb-1">Infosys Springboard</span>
+                    <h5 class="font-bold text-slate-100 text-sm">TechA CompTIA Network+(Plus) Certification</h5>
+                </div>
+                <span class="text-xs font-mono text-brand-textMuted mt-4 block text-right">2025</span>
+            </div>
+            <!-- Cert 6 -->
+            <div class="p-4 bg-brand-card border border-slate-800 rounded flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-mono text-brand-accent uppercase tracking-wider block mb-1">NPTEL (Elite)</span>
+                    <h5 class="font-bold text-slate-100 text-sm">Soft Skills</h5>
+                </div>
+                <span class="text-xs font-mono text-brand-textMuted mt-4 block text-right">2023</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/60 bg-brand-dark py-8 text-center text-xs text-brand-textMuted font-mono">
+        <p class="mb-2">Designed & Built by Shree Madhumitha N</p>
+        <p>&copy; 2026 • Hardware & Software Engineering Portfolio</p>
+    </footer>
+
+    <!-- JavaScript for Menu and Navigation Highlighting -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Dynamic Active Navigation Link Underlining
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a, #mobile-menu a');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active-nav');
+                        } else {
+                            link.classList.remove('active-nav');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
